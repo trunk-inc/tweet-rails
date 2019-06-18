@@ -29,7 +29,7 @@ if (argv.mode === 'development') {
 }
 
 gulp.task('doc', function () {
-  return gulp.src('./src/**/*.{js,vue}')
+  return gulp.src('./src/**/*.{js}')
     .pipe(documentation('html', {}, {
       name: 'RICHKA CAST',
       version: '1.0.0'

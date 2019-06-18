@@ -1,0 +1,46 @@
+.form {
+
+  &:not(:root) {
+    width: 522px;
+    margin: 16px auto;
+  }
+
+  > .title {
+    font-size: 2.3rem;
+    font-weight: bold;
+  }
+
+  .input {
+    display: block;
+    outline: 0;
+    width: 100%;
+    padding: 10px 0;
+    margin: 16px 0;
+    font-size: 1.9rem;
+    border-bottom: 1px solid $PRIMARY_GRAY;
+
+    &:focus {
+      border-bottom: 2px solid $PRIMARY_BLUE;
+    }
+  }
+
+  .field_with_errors > .input {
+    border-bottom: 2px solid red;
+    &::placeholder {
+      color: red;
+      font-weight: bold;
+    }
+  }
+
+  > .errors {
+    background-color: #ffc4c4;
+    border-radius: 8px;
+    padding: 8px;
+    color: #313131;
+
+    &:empty {
+      height: 0;
+      display: none;
+    }
+  }
+}

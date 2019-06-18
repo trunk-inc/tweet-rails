@@ -1,0 +1,36 @@
+.share {
+
+  &:not(:root) {
+    width: 680px;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+
+  > .title {
+    font-size: 2.1rem;
+    font-weight: bold;
+    color: $PRIMARY_DARK_GRAY_VOL2;
+    margin-bottom: 10px;
+  }
+
+  > .input {
+    min-height: 65px;
+    width: 100%;
+    padding: 6px;
+    resize: vertical;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+    outline: none;
+    transition: border .3s;
+
+    &:focus {
+      border: 2px solid $PRIMARY_BLUE;
+    }
+  }
+
+  > .submit {
+    margin-left: auto;
+    margin-top: 16px;
+  }
+}

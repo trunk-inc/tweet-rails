@@ -1,0 +1,28 @@
+.btn {
+
+  &:not(:root) {
+    display: block;
+    padding: 6px 16px;
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-radius: 100px;
+    outline: 0;
+  }
+
+  &.primary {
+    color: $WHITE;
+    background-color: $PRIMARY_BLUE;
+    border: 1px solid $PRIMARY_BLUE;
+  }
+
+  &.default {
+    border: 1px solid $PRIMARY_BLUE;
+    color: $PRIMARY_BLUE;
+  }
+
+  &.tweet {
+    color: $WHITE;
+    background-color: $PRIMARY_ORANGE;
+    border: 1px solid $PRIMARY_ORANGE;
+  }
+}

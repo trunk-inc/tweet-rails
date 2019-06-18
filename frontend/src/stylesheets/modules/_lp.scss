@@ -1,0 +1,128 @@
+.lp {
+
+  &:not(:root) {
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  & &__content {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+    min-height: 100%
+  }
+
+  & &__cell {
+    // background-color: $PRIMARY_BLUE;
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  & &__cell-communication {
+    color: $WHITE;
+    background-color: $PRIMARY_BLUE;
+  }
+
+  & &__items {
+    position: relative;
+  }
+
+  & &__item {
+    font-weight: bold;
+    font-size: 1.8rem;
+    margin: 48px auto;
+  }
+
+  & &__bird {
+    position: absolute;
+    top: -20vh;
+    right: -80vh;
+
+    [data-bird] {
+      height: 140vh;
+      width: auto;
+      max-width: none;
+    }
+
+    [data-bird] path {
+      fill: $PRIMARY_DARK_BLUE !important;
+    }
+  }
+
+  & &__footer {
+    padding: 10px 0;
+    font-size: 1.2rem;
+  }
+
+  & &__footer-items {
+    color: $PRIMARY_GRAY;
+    display: flex;
+    justify-content: center;
+  }
+
+  & &__footer-item {
+    margin: 0 9px;
+  }
+
+  & &__header {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px auto;
+  }
+
+  & &__logo {
+    width: 45px;
+    height: 36px;
+  }
+
+  & &__btn {
+    color: $PRIMARY_BLUE;
+    border: 1px solid $PRIMARY_BLUE;
+    padding: 6px 16px;
+    text-align: center;
+    border-radius: 100px;
+    line-height: 0;
+    font-weight: bold;
+  }
+
+  & &__control {
+    max-width: 350px;
+  }
+
+  & &__title {
+    font-size: 2.7rem;
+    font-weight: bold;
+  }
+
+  & &__form {
+    margin-top: 48px;
+  }
+
+  & &__form-title {
+    font-size: 1.8rem;
+    margin: 16px auto;
+  }
+
+  & &__form-btn {
+    display: block;
+    padding: 6px 16px;
+    border: 1px solid $PRIMARY_BLUE;
+    text-align: center;
+    border-radius: 100px;
+    color: $PRIMARY_BLUE;
+    width: 100%;
+    margin: 16px 0;
+    font-weight: bold;
+
+    &:first-of-type {
+      color: $WHITE;
+      background-color: $PRIMARY_BLUE;
+    }
+  }
+}

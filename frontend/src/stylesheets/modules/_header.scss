@@ -1,0 +1,49 @@
+.header {
+
+  &:not(:root) {
+    position: relative;
+    height: 53px;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+  }
+
+  > .content {
+    width: 600px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+
+    &.wide {
+      width: 800px;
+    }
+
+    > .logo {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform:  translate(-50%, -50%);
+      width: 26.5px;
+    }
+
+    > .submit {
+      font-size: 1.5rem;
+      height: 30px;
+      line-height: 0;
+      display: block;
+      position: absolute;
+      top: 50%;
+      right: 120px;
+      transform:  translateY(-50%);
+      margin-right: 15px;
+      background-color: $PRIMARY_BLUE;
+      min-height: 30px;
+      line-height: 30px;
+      padding: 0 16px;
+      width: 120px;
+    }
+
+    > .logout {
+      background-color: $WHITE;
+      right: 0;
+    }
+  }
+}

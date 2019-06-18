@@ -1,0 +1,24 @@
+.timeline {
+
+  &:not(:root) {
+    background-color: #e6ecf0;
+  }
+
+  > .main {
+    max-width: 890px;
+    margin: 0 auto;
+    display: flex;
+  }
+
+  > .content {
+    flex-grow: 1;
+    margin-left: 16px;
+  }
+}
+
+.sidebar {
+  &:not(:root) {
+    min-width: 300px;
+    min-height: 80vh;
+  }
+}

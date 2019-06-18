@@ -1,0 +1,48 @@
+extends /layout/_application
+
+block content
+  .content
+    header.header
+      .content.wide
+        img.logo(src="/images/icons/tw-icon.svg")
+        button.submit.btn.tweet ツイート
+
+    .hero
+      .container
+      .app
+        .avatar
+      .nav
+        ul.items
+          li.item
+            .label ツイート
+            .num 16,976
+          li.item
+            .label フォロー
+            .num 645
+          li.item
+            .label フォロワー
+            .num 1,329
+          li.item
+            .label いいね
+            .num 18,872
+    .timeline
+      .main
+        .sidebar
+          .profile
+            h1.name ユーザー名
+            h2.account @account
+            .description
+              | これは紹介文テキストこれは紹介文テキストこれは紹介文テキストこれは紹介文テキストこれは紹介文テキストこれは紹介文テキスト
+        .content
+          - for (var i = 0; i < 30; i++)
+            .tweet
+              .content
+                .avatar
+                  img.img(src="https://pbs.twimg.com/profile_images/992619235850444800/NRV9dtxv_400x400.jpg")
+                .main
+                  .header
+                    .item.name ユーザー名
+                    .item.account @account
+                    .item.date 2017年10月9日
+                  .text
+                    | 本日全ての開発者の皆さんにAccount Activity APIを公開しました。なお、User StreamsとSite Streamsとともに、ダイレクトメッセージの使われていないエンドポイントは本日から3ヶ月後の2018年8月16日（米国時間）に廃止されるよう変更になります。詳細は以下ブログをご覧ください。

@@ -1,0 +1,65 @@
+.hero {
+
+  &:not(:root) {
+    position: relative;
+  }
+
+  > .app {
+    max-width: 890px;
+    margin: 0 auto;
+    position: relative;
+
+    > .avatar {
+      width: 210px;
+      height: 210px;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      background: url(https://pbs.twimg.com/profile_images/992619235850444800/NRV9dtxv_400x400.jpg) no-repeat center /contain;
+
+      position: absolute;
+      left: 10px;
+      bottom: 0;
+      transform: translateY(40%);
+    }
+  }
+
+  > .container {
+    height: 280px;
+
+    &::before {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 100%;
+      background: url(https://pbs.twimg.com/profile_banners/1459167066/1466348909/1500x500) no-repeat center /cover;
+    }
+  }
+
+  > .nav {
+    height: 60px;
+    width: 100%;
+    max-width: 890px;
+    margin: 0 auto;
+    padding-left: 300px;
+
+    > .items {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      color: $PRIMARY_DARK_GRAY;
+
+      .item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.8rem;
+        font-weight: bold;
+        padding: 0 15px;
+
+        > .label {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+}

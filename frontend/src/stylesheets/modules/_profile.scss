@@ -1,0 +1,24 @@
+.profile {
+
+  &:not(:root) {
+    margin: 35px 0;
+  }
+
+  > .name {
+    font-size: 2.1rem;
+    font-weight: bold;
+    margin: 12px 0;
+  }
+
+  > .account {
+    font-size: 1.4rem;
+    color: $PRIMARY_DARK_GRAY_VOL2;
+    margin: 12px 0;
+  }
+
+  > .description {
+    font-size: 1.4rem;
+    max-width: 80%;
+    word-break: break-all;
+  }
+}

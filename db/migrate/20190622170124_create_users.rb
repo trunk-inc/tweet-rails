@@ -1,4 +1,4 @@
-class User < ActiveRecord::Migration[5.1]
+class CreateUsers < ActiveRecord::Migration[5.1]
   def change
     create_table :users do |t|
       t.string :account, unique: true, index: true, limit: 128
@@ -8,6 +8,8 @@ class User < ActiveRecord::Migration[5.1]
       t.text :cover_url
 
       t.timestamps null: false
+
+      t.timestamps
     end
   end
 end

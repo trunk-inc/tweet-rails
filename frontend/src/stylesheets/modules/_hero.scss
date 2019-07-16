@@ -16,6 +16,7 @@
       border: 5px solid #fff;
       background: url(https://pbs.twimg.com/profile_images/992619235850444800/NRV9dtxv_400x400.jpg) no-repeat center /contain;
       background-color: white;
+      background-size: cover;
 
       position: absolute;
       left: 10px;
@@ -26,14 +27,17 @@
 
   > .container {
     height: 280px;
+    background-image: url(https://pbs.twimg.com/profile_banners/1459167066/1466348909/1500x500);
+    background-size: cover;
+    background-position: center;
 
-    &::before {
-      content: '';
-      display: block;
-      width: 100%;
-      height: 100%;
-      background: url(https://pbs.twimg.com/profile_banners/1459167066/1466348909/1500x500) no-repeat center /cover;
-    }
+    // &::before {
+    //   content: '';
+    //   display: block;
+    //   width: 100%;
+    //   height: 100%;
+    //   background: url(https://pbs.twimg.com/profile_banners/1459167066/1466348909/1500x500) no-repeat center /cover;
+    // }
   }
 
   > .nav {

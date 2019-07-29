@@ -24,3 +24,5 @@ node_modules
 /vendor
 tmp/
 log/
+spec
+.rspec

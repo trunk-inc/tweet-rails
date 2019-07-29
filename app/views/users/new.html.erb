@@ -1,0 +1,17 @@
+<div class="content">
+  <%= form_for @user do |f|%>
+    <header class="header">
+      <div class="content"><img class="logo" src="/assets/images/icons/tw-icon.svg">
+      <%= f.submit "登録", { class: "submit btn primary" }%>
+      </div>
+    </header>
+    <div class="form">
+      <h1 class="title">アカウントを作成</h1>
+      <%= f.text_field :account, { class: "input", placeholder: "アカウント名" }%>
+      <%= f.text_field :username, { class: "input", placeholder: "名前" }%>
+      <%= f.text_field :introduction, { class: "input", placeholder: "紹介文" }%>
+      <%= f.text_field :icon_url, { class: "input", placeholder: "アイコンURL" }%>
+      <%= f.text_field :cover_url, { class: "input", placeholder: "カバーURL" }%>
+    </div>
+  <% end %>
+</div>

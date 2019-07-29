@@ -4,4 +4,5 @@ class User < ApplicationRecord
   validates :introduction, presence: true
   validates :icon_url,     presence: true
   validates :cover_url,    presence: true
+  has_many :tweets
 end

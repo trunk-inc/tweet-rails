@@ -1,0 +1,14 @@
+<div class="content">
+  <header class="header">
+    <div class="content wide">
+      <img class="logo" src="/assets/images/icons/tw-icon.svg" />
+    </div>
+    <%= form_for @tweet do |f|%>
+      <div class="share">
+        <div class="title">ツイートをあなたのフォロワーに共有する</div>
+          <%= f.text_area :tweet, { class: "input" }%>
+          <%= f.submit "ツイート", { class: "submit btn primary" }%>
+      </div>
+    <% end %>
+  </header>
+</div>

@@ -1,0 +1,17 @@
+<div class="content">
+  <%= form_tag "/sessions" do %>
+  <header class="header">
+    <div class="content"><img class="logo" src="/assets/images/icons/tw-icon.svg">
+      <button class="submit btn primary">ログイン</button>
+      <%= submit_tag "ログイン", { class: "submit btn primary" } %>
+    </div>
+  </header>
+  <div class="form">
+    <% if flash[:error].present? %>
+      <ul class="errors"><li class="errors-item"> <%= flash[:error] %> </li></ul>
+    <% end %>
+    <h1 class="title">TweetAppにログイン</h1>
+    <%= text_field_tag :account, "", { class: "input", placeholder: "アカウント名" } %>
+  </div>
+  <% end %>
+</div>

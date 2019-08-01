@@ -3,4 +3,5 @@ Rails.application.routes.draw do
   resources :users
   root 'home#index'
   resources :sessions, only: [:new, :create]
+  resources :timeline, only: :index
 end

@@ -2,14 +2,14 @@
   <header class="header">
     <div class="content wide">
       <img class="logo" src="/assets/images/icons/tw-icon.svg" />
-      <button class="submit btn tweet">ツイート</button>
+      <%= link_to "ツイート", new_tweet_path, class: "submit btn tweet" %>
       <button class="submit btn default logout">ログアウト</button>
     </div>
   </header>
   <div class="hero">
-    <div class="container"></div>
+    <div class="container" style="background-image: url('<%= @user.cover_url %>');"></div>
     <div class="app">
-      <div class="avatar" style="background-image: url('/assets/images/icons/lion.svg');"></div>
+      <div class="avatar" style="background-image: url('<%= @user.icon_url %>');"></div>
     </div>
     <div class="nav">
       <ul class="items">
@@ -37,26 +37,27 @@
       <div class="sidebar">
         <div class="profile">
           <h1 class="name"><%= @user.username %></h1>
-          <h2 class="account"><%= "@#{@user.account}" %></h2>
+          <h2 class="account"><%= "@#{@user.account }" %></h2>
           <div class="description"><%= @user.introduction %></div>
         </div>
       </div>
       <div class="content">
 
-        <div class="tweet">
-          <div class="content">
-            <div class="avatar"><img class="img" src="/assets/images/icons/lion.svg" /></div>
-            <div class="main">
-              <div class="header">
-                <div class="item name"><%= @user.username %></div>
-                <div class="item account"><%= @user.account %></div>
-                <div class="item date">2017年10月9日</div>
+        <% @user.tweets.each do |tweet| %>
+          <div class="tweet">
+            <div class="content">
+              <div class="avatar"><img class="img" src="/assets/images/icons/lion.svg" /></div>
+              <div class="main">
+                <div class="header">
+                  <div class="item name"><%= @user.username %></div>
+                  <div class="item account"><%= @user.account %></div>
+                  <div class="item date"><%= tweet.created_at.strftime("%Y年%m月%d日") %></div>
+                </div>
+                <div class="text"> <%= tweet.tweet %></div>
               </div>
-              <div class="text">テストツイート</div>
             </div>
           </div>
-        </div>
-
+        <% end %>
       </div>
     </div>
   </div>

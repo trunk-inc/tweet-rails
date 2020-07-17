@@ -68,7 +68,7 @@
   },
   "dependencies": {
     "axios": "^0.18.0",
-    "lodash": "^4.17.10",
+    "lodash": "^4.17.19",
     "nouislider": "^11.1.0",
     "page": "^1.8.6",
     "rails-ujs": "^5.2.1"

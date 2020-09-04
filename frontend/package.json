@@ -42,7 +42,7 @@
     "html-webpack-plugin": "^4.0.0-alpha",
     "marked": "^0.5.0",
     "minimist": "^1.2.0",
-    "node-sass": "^4.8.3",
+    "node-sass": "^4.13.1",
     "portfinder": "^1.0.13",
     "postcss-cssnext": "^3.1.0",
     "postcss-loader": "^2.1.3",
